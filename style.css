@@ -1,0 +1,87 @@
+body {
+  background-color:#4a98f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+  }
+
+   #botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    }
+
+  #titulo{
+    padding: 0;
+    font-weight: 500;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+
+ 
+  input[type="text"] {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    width: 100px;
+    margin: center;
+  }
+  input:focus {
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    display: flex;
+    background-color: #4a98f7;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    font-size: 16px;
+    padding: 10px 20px;
+  
+  }
+  
+  button:hover {
+    background-color: #2d6ca2;
+  }
+  
+  #message {
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
