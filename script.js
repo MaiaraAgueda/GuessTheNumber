@@ -13,7 +13,7 @@ let numTentativas = 7;
 tentativas.textContent = numTentativas;
 
 // adicionar evento de submissão do formulário
-formulario.addEventListener('submit', function(event) {
+formulario.addEventListener('submit', function (event) {
   event.preventDefault(); // impedir envio do formulário
 
   const palpite = parseInt(entrada.value);
@@ -22,10 +22,10 @@ formulario.addEventListener('submit', function(event) {
   } else if (palpite < 1 || palpite > 100) {
     mensagem.textContent = 'Type a number between 1 and 100!';
   } else if (palpite < numeroAleatorio) {
-    mensagem.textContent = 'Your number is too small: [' + (palpite + 1) + ', 100]';
+    mensagem.textContent = 'Your number is too small! [' + (palpite + 1) + ', 100]';
     numTentativas--;
   } else if (palpite > numeroAleatorio) {
-    mensagem.textContent = 'Your number is too large: [1, ' + (palpite - 1) + ']';
+    mensagem.textContent = 'Your number is too large! [1, ' + (palpite - 1) + ']';
     numTentativas--;
   } else {
     mensagem.textContent = 'Congratulations!';
@@ -44,7 +44,7 @@ formulario.addEventListener('submit', function(event) {
 
 // função para reiniciar o jogo
 function reiniciarJogo() {
-  setTimeout(function() {
+  setTimeout(function () {
     location.reload();
   }, 5000); // aguardar 
 }

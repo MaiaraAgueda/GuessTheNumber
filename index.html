@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Adivinhe o número</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-        <form id="advinha-form">
-          <h2 id="titulo">Guess a number from 1 to 100</h2>
-          <p id="message"></p>
-          <label for="guess-input" id="aviso"> </label>
-          <div id="botao">
-              <input type="text" id="advinha-input" min="1" max="100" required>
-              <button type="submit" id="botaoAdvinhar">Check</button>
-          </div>       
-          <p>You have <span id="tries">7</span> chances</p>
-        </form>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adivinhe o número</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="advinha-form">
+      <h2 id="titulo">Guess a number from 1 to 100</h2>
+      <p id="message"></p>
+      <label for="guess-input" id="aviso"> </label>
+      <div id="botao">
+        <input type="text" id="advinha-input" min="1" max="100" required>
+        <button type="submit" id="botaoAdvinhar">Check</button>
       </div>
-      
-    <script src="script.js"></script>
-  </body>
+      <p>You have <span id="tries">7</span> chances</p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
